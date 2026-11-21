@@ -1,0 +1,5 @@
+# Призначення виводів ПЛІС iCE40UP5K-SG48 на платі iCEBreaker
+set_io -nowarn clk       35   # генератор 12 МГц
+set_io -nowarn rx         6   # RX від USB-UART (FTDI)
+set_io -nowarn tx         9   # TX до USB-UART (FTDI)
+set_io -nowarn led_err_n 11   # червоний світлодіод LEDR_N (активний 0)
