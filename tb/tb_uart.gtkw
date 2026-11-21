@@ -1,0 +1,34 @@
+[timestart] 0
+[size] 1600 900
+*-24.000000 0 
+@28
+tb_uart.clk
+tb_uart.rst
+@200
+-Transmitter (Tx)
+@28
+tb_uart.tx_start
+@22
+tb_uart.tx_data[7:0]
+@28
+tb_uart.dut_tx.state[1:0]
+@24
+tb_uart.dut_tx.bit_idx[2:0]
+@28
+tb_uart.tx_busy
+tb_uart.tx_line
+tb_uart.tx_done
+@200
+-Receiver (Rx)
+@28
+tb_uart.loopback
+tb_uart.rx_line
+tb_uart.dut_rx.state[1:0]
+@24
+tb_uart.dut_rx.bit_idx[2:0]
+@28
+tb_uart.rx_valid
+@22
+tb_uart.rx_data[7:0]
+@28
+tb_uart.rx_error
